@@ -1,0 +1,28 @@
+header {
+  @include flexbox-center();
+  flex-direction: column;
+  margin-bottom: $gap-6;
+
+  img {
+    height: $gap-9;
+    width: $gap-9;
+    border-radius: 50%;
+    margin-bottom: $gap-3;
+    transition: 0.2s;
+    &:hover {
+      outline: 4px solid $color-white;
+    }
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  p {
+    margin-top: $gap-1;
+    font-size: 2.4rem;
+    background: linear-gradient(70deg, #923dff 13%, #ac76ff 94%);
+    font-weight: 400;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
